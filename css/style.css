@@ -1,0 +1,141 @@
+
+/*
+F6F5F2
+F0EBE3
+F3D0D7
+FFEFEF
+FFEEF4
+*/
+/* dia ga mau muncul, jadi editnya di html 
+.logo{
+    height: 20px;
+    border: 1px solid black;
+}note: turns out itu karena herf nya cuma style.css bukan css/style.css*/
+
+*{
+    box-sizing: border-box;
+    font-family: Playfair Display;
+}
+
+
+/*-----------------navigation-----------------*/
+
+/*logo*/
+.navigation{
+    position: fixed; /*pas ditambahin ini, semua nav jadi mengecil*/
+    display: flex; /*biar antaara logo dan menubar kejajar kesamping bukan kebawah*/
+    justify-content: space-between; /* biar logo dan menubar terpisah*/
+    align-items: center; /* biar logo dan menubar di tengah posisi navigation*/
+    top: 0; left: 0; right: 0; /*untuk memperbaiki position yang ngerusak semua*/
+    background-color: #F6F5F2;
+    box-shadow: 0 5px 10px rgb(200, 190, 209);
+    padding: 1% /*ke atas*/   3% /*kanan kiri*/    1% /*ke bawah*/;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(../assets/logo.jpg);
+}
+
+
+.menubar a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none; /*menghilangkan garis bawah*/
+    font-size: 17px;
+}
+
+/*-----------------banner-----------------*/
+.banner{
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+    border-color: #d88394;
+    padding-left: 10px;
+    margin-top: 97px;
+    background-image: url(../assests/wall.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/*-----------------welcome-----------------*/
+.welcome{
+    text-align: center;
+    margin: 40px;
+}
+
+
+
+/*-----------------about-----------------*/
+.about{ /*bikin kotak border*/
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+    border-color: #d88394;
+    background-color: #FFEEF4;
+    padding-left: 10px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.about-icon{ /*border skill*/
+    height: 30px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+/*-----------------portofolio-----------------*/
+.work{ /*border portofolio*/
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+}
+
+.porto h2{
+    font-size: 50px;
+}
+
+.porto-content{ /*ui, web, pm bisa sejajar*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.porto-icon{ /*border ui,web, pm*/
+    width: 150px;
+    height: 30px;
+    border-radius: 10%;
+    border: 1px solid;
+}
+
+.portofolio{ /*border porto 123*/
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.porto-container{ /*porto 123 bisa sejajar*/
+    text-align: center;
+}
+
+.porto-desc{
+    height: 150px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 10%;
+    background-size: cover;
+    background-image: url(../assets/logo.jpg);
+}
