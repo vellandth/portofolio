@@ -20,8 +20,8 @@
 
     <!--navigasi-->
     <nav class="menubar">        
-        <a href="#about">About Me</a> <!--isinya tentang (kiri) foto dan (kanan) paragraf apa itu website ini dan visi misi-->
-        <a href="#porto">My Work</a><!--paragon isinya apa aja, wardah dll-->
+        <a href="#about-container">About Me</a> <!--isinya tentang (kiri) foto dan (kanan) paragraf apa itu website ini dan visi misi-->
+        <a href="#work">My Work</a><!--paragon isinya apa aja, wardah dll-->
         <a href="#contact">Contack Me!</a>
     </nav>
 
@@ -34,7 +34,7 @@
     <!--banner-->
     <section class="banner" id="banner"> <!--tiap menubar ada sectionnya masing masing-->
         <header>
-            <H2>I'm Vellanindhita Noorprameswari Yudoyono</H2>
+            <H2>I'm Vellanindhita</H2>
         </header>
             <p>Front-End Developer</p>
 
@@ -42,12 +42,17 @@
 
     <!--welcome-->
     <header class="welcome">
-        <H2>Hi <span>dear</span>! Welcome to My Portofolio Website</H2>
+        <H2>Hi, <span>dear</span>! Welcome to My Portofolio Website</H2>
     </header>
 
     <!--about me-->
-    <section class="about" id="about"> <!--tiap menubar ada sectionnya masing masing-->
+    <section class="about-container" id="about-container"> <!--tiap menubar ada sectionnya masing masing-->
         
+        <div class="about-desc">
+            <h2>Vellanindhita Noorprameswari Yudoyono</h2>
+            <p>Mahasiswi Jurusan Teknik Informatika angkatan 2022 dengan minat dalam bidang Front-End dan UI/UX</p>
+        </div>
+
         <article class="about-content" id="skill">
             <div class="about-icon satu">skill 1</div>
 
@@ -59,38 +64,41 @@
     </section>
 
     <!--portofolio-->
-    <section id="porto" class="work"> <!--tiap menubar ada sectionnya masing masing-->
-        <header class="porto">
-            <H2>Portofolio</H2>
-            <p>Ini adalah wesite yang saya buat</p>
-        </header>
-
-        <article class="porto-content">
-            <div class="porto-icon satu">UI/UX</div>
-
-            <div class="porto-icon dua">Web Design</div>
-            
-            <div class="porto-icon tiga">Project Management</div>
-        </article>
-
+    <section id="work" class="work"> <!--tiap menubar ada sectionnya masing masing-->
         
-        <article class="portofolio">
-            <div class="porto-container">
-                <div class="porto-desc"></div>
-                <p>porto 1</p>
-            </div>
+        <div class="work-border">
+            <header class="work-desc">
+                <H2>Portofolio</H2>
+                <p>Ini adalah wesite yang saya buat</p>
+            </header>
 
-            <div class="porto-container">
-                <div class="porto-desc"></div>
-                <p>porto 2</p>
-            </div>
+            <article class="porto-content">
+                <div class="porto-icon satu">UI/UX</div>
 
-            <div class="porto-container">
-                <div class="porto-desc"></div>
-                <p>porto 3</p>
-            </div>
+                <div class="porto-icon dua">Web Design</div>
+                
+                <div class="porto-icon tiga">Project Management</div>
+            </article>
 
-        </article>
+            
+            <article class="portofolio">
+                <div class="porto-container">
+                    <div class="porto-desc"></div>
+                    <p>porto 1</p>
+                </div>
+
+                <div class="porto-container">
+                    <div class="porto-desc"></div>
+                    <p>porto 2</p>
+                </div>
+
+                <div class="porto-container">
+                    <div class="porto-desc"></div>
+                    <p>porto 3</p>
+                </div>
+            </article>
+        </div>
+
     </section>
 
 
